@@ -3,13 +3,18 @@
 
 int main()
 {
-    int chiffre, i, Res;
+    int chiffre;
 
     printf("asdasdas");
 
     scanf("%d", &chiffre);
 
-    for(i=chiffre-1; i>0; i--){
+    FonctionFactorielle(chiffre);
+}
+
+void FonctionFactorielle(int chiffre)
+{
+    for(int i=chiffre-1; i>0; i--){
         chiffre=chiffre*i;
     }
     printf("%d", chiffre);
