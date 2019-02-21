@@ -5,6 +5,8 @@ int main()
 {
     int chiffre, i, Res;
 
+    printf("asdasdas");
+
     scanf("%d", &chiffre);
 
     for(i=chiffre-1; i>0; i--){
