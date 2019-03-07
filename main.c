@@ -7,9 +7,12 @@ int main()
 
     printf("asdasdas");
 
+    //hello sa joue
+
     scanf("%d", &chiffre);
 
     FonctionFactorielle(chiffre);
+    printf("%d", FonctionFactorielle(chiffre));
 }
 
 /** \brief compute the factorial of number chiffre
@@ -18,11 +21,12 @@ int main()
  * \return void
  *
  */
-void FonctionFactorielle(int chiffre)
+int FonctionFactorielle(int chiffre)
 {
-    for(int i=chiffre-1; i>0; i--){
-        chiffre=chiffre*i;
+    if(chiffre==1){
+        return 1;
     }
-    printf("%d", chiffre);
-    return 0;
+    chiffre=chiffre*FonctionFactorielle(chiffre-1);
+    return chiffre;
 }
+
