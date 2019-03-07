@@ -7,6 +7,8 @@ int main()
 
     printf("asdasdas");
 
+    //hello sa joue
+
     scanf("%d", &chiffre);
 
     FonctionFactorielle(chiffre);
