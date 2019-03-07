@@ -12,6 +12,12 @@ int main()
     FonctionFactorielle(chiffre);
 }
 
+/** \brief compute the factorial of number chiffre
+ *
+ * \param chiffre int an integer
+ * \return void
+ *
+ */
 void FonctionFactorielle(int chiffre)
 {
     for(int i=chiffre-1; i>0; i--){
